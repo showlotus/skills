@@ -155,6 +155,7 @@
 基于 Conventional Commits 规范，智能分析代码变更并生成标准化提交信息。
 
 **核心能力：**
+
 - 自动检测变更类型（feat/fix/refactor 等）
 - 智能识别影响范围（scope）
 - 生成语义化提交信息
@@ -162,6 +163,7 @@
 - 支持 Breaking Change 标记
 
 **使用示例：**
+
 ```
 "帮我提交代码"
 "创建一个 git commit"
@@ -169,6 +171,30 @@
 ```
 
 **提交类型：** feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert
+
+---
+
+### [UI/UX Pro Max](./.agents/skills/ui-ux-pro-max/) - UI/UX 设计智能 🖌️
+
+可搜索的 UI 样式、配色、字体、图表、UX 指南数据库，支持 8 种技术栈。
+
+**核心能力：**
+
+- 50+ UI 样式（glassmorphism、brutalism、neumorphism 等）
+- 21 种配色方案（按产品类型推荐）
+- 50 种字体配对（含 Google Fonts 引入）
+- 20 种图表类型推荐
+- 8 种技术栈最佳实践（React、Next.js、Vue、Svelte、SwiftUI、React Native、Flutter、Tailwind）
+
+**使用示例：**
+
+```
+"帮我设计一个 SaaS 着陆页"
+"创建一个深色主题的仪表盘"
+"优化这个组件的 UI"
+```
+
+**适用场景：** 网站、着陆页、仪表盘、电商、移动应用
 
 ---
 
