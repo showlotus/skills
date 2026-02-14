@@ -2,6 +2,8 @@
 
 为 Claude AI 量身定制的实用技能集合，提升开发效率和职业生产力。
 
+<!-- https://skills.sh/ -->
+
 ## 📚 Skills 列表
 
 ### [Code Review](./code-review/) - 智能代码审查 🔍
@@ -148,39 +150,61 @@
 
 ---
 
+### [Git Commit](./git-commit/) - Git 提交助手 💾
+
+基于 Conventional Commits 规范，智能分析代码变更并生成标准化提交信息。
+
+**核心能力：**
+- 自动检测变更类型（feat/fix/refactor 等）
+- 智能识别影响范围（scope）
+- 生成语义化提交信息
+- 智能文件暂存与分组
+- 支持 Breaking Change 标记
+
+**使用示例：**
+```
+"帮我提交代码"
+"创建一个 git commit"
+"/commit"
+```
+
+**提交类型：** feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert
+
+---
+
 ## 🚀 安装
 
 ### 使用 skills CLI（推荐）
 
 ```bash
 # 列出所有可用的 skills
-npx skills add your-username/skills --list
+npx skills add showlotus/skills --list
 
 # 安装特定 skill
-npx skills add your-username/skills --skill code-review
-npx skills add your-username/skills --skill resume-optimizer
-npx skills add your-username/skills --skill frontend-design
-npx skills add your-username/skills --skill vercel-react-best-practices
-npx skills add your-username/skills --skill notebooklm
-npx skills add your-username/skills --skill frontend-interviewer
+npx skills add showlotus/skills --skill code-review
+npx skills add showlotus/skills --skill resume-optimizer
+npx skills add showlotus/skills --skill frontend-design
+npx skills add showlotus/skills --skill vercel-react-best-practices
+npx skills add showlotus/skills --skill notebooklm
+npx skills add showlotus/skills --skill frontend-interviewer
 
 # 安装所有 skills
-npx skills add your-username/skills --skill '*'
+npx skills add showlotus/skills --skill '*'
 
 # 指定安装到 Claude Code
-npx skills add your-username/skills --skill code-review -a claude-code
+npx skills add showlotus/skills --skill code-review -a claude-code
 
 # 全局安装（所有项目可用）
-npx skills add your-username/skills --skill code-review -g
+npx skills add showlotus/skills --skill code-review -g
 ```
 
-> **注意：** 将 `your-username` 替换为实际的 GitHub 用户名
+> **注意：** 将 `showlotus` 替换为实际的 GitHub 用户名
 
 ### 手动安装
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/skills.git
+git clone https://github.com/showlotus/skills.git
 
 # 复制到项目的 .claude/skills 目录
 cp -r skills/code-review your-project/.claude/skills/
